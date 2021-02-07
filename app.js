@@ -64,7 +64,7 @@ const app = express();
     */
    //CONFIGURAÇÃO PADRÃO DO MONGODB
     mongoose.Promise = global.Promise;
-    mongoose.connect(db.mongoURI, {
+    mongoose.connect(urlRemoto, {
         useNewUrlParser:true, useUnifiedTopology: true
     }).then(function() {
         console.log("MongoDB Conectado...")
